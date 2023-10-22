@@ -30,7 +30,7 @@ export class Secret {
       //@ts-ignore
       const secret = await Secrets.find({ userId: req.user.id }).populate(
         "userId",
-        ["fullname", "email", "userLocation"]
+        ["fullname", "email"]
       );
 
       if (!secret) {
@@ -42,7 +42,7 @@ export class Secret {
 
       return res.status(200).json({
         data: secret,
-        message: "omg here's your nasty secret",
+        message: "omg here's your nasty little secret",
       });
     } catch (err) {
       res.status(500).json({
