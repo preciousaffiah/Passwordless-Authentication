@@ -13,7 +13,7 @@ export async function authMiddleware(
   }
 
   try {
-    const decodedToken = jwt.verify(token, process.env.MAILGUN_JWT_SECRET || "") as any;
+    const decodedToken = jwt.verify(token, process.env.JWT_SECRET || "") as any;
 
     // @ts-ignore
     req.user = decodedToken.user;
