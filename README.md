@@ -1,4 +1,4 @@
-# PasswordlessLogin-Authentication
+# Passwordless Authentication
 
 Passwordless authentication is a security method that allows users to access their accounts or systems without using traditional passwords. Instead of relying on a secret combination of characters, passwordless authentication uses alternative methods to verify a user's identity. These methods can include:
 
