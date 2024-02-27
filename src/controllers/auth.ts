@@ -33,7 +33,7 @@ export class Auth {
       };
       const token = jwt.sign(
         { user: userData },
-        process.env.MAILGUN_JWT_SECRET || "",
+        process.env.JWT_SECRET || "",
         {
           expiresIn: "1d",
         }
@@ -108,7 +108,7 @@ export class Auth {
 
       const token = jwt.sign(
         { user: userData },
-        process.env.MAILGUN_JWT_SECRET || "",
+        process.env.JWT_SECRET || "",
         {
           expiresIn: "1d",
         }
